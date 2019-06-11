@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+            <string>Helvetica-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="KGk-i7-Jjw" customClass="PlaylistTableViewCell" customModule="SmashMusic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OPP-vk-64h">
+                        <rect key="frame" x="3" y="4" width="59" height="59.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="59" id="mI3-Vp-I5C"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdJ-ST-Bfr">
+                        <rect key="frame" x="67" y="38" width="217" height="12"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playlist name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3k-cm-Uae">
+                        <rect key="frame" x="67" y="17" width="217" height="20"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="am2-EZ-ihW">
+                        <rect key="frame" x="292" y="17" width="23" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="H8V-Bc-EzG"/>
+                        </constraints>
+                        <color key="tintColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
+                        <state key="normal" image="NowPlaying-More"/>
+                        <connections>
+                            <action selector="moreOptionButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mcN-EQ-B3I"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OPP-vk-64h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-13" id="2ef-O0-GJs"/>
+                    <constraint firstItem="OPP-vk-64h" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2nL-zj-S4C"/>
+                    <constraint firstAttribute="bottom" secondItem="OPP-vk-64h" secondAttribute="bottom" constant="3" id="4AE-CC-qMx"/>
+                    <constraint firstItem="am2-EZ-ihW" firstAttribute="leading" secondItem="a3k-cm-Uae" secondAttribute="trailing" constant="8" symbolic="YES" id="C07-c5-CZL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="am2-EZ-ihW" secondAttribute="trailing" constant="-11" id="Hjc-R7-ZW2"/>
+                    <constraint firstItem="a3k-cm-Uae" firstAttribute="leading" secondItem="OPP-vk-64h" secondAttribute="trailing" constant="5" id="KIF-0U-MQv"/>
+                    <constraint firstItem="OPP-vk-64h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-7" id="NZ6-yu-NUJ"/>
+                    <constraint firstItem="a3k-cm-Uae" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="Z5y-n3-RJJ"/>
+                    <constraint firstItem="a3k-cm-Uae" firstAttribute="top" secondItem="am2-EZ-ihW" secondAttribute="top" id="dra-M5-UWh"/>
+                    <constraint firstItem="am2-EZ-ihW" firstAttribute="leading" secondItem="pdJ-ST-Bfr" secondAttribute="trailing" constant="8" symbolic="YES" id="mUM-PQ-lfz"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="am2-EZ-ihW" secondAttribute="bottom" constant="11" id="oYN-jl-gd9"/>
+                    <constraint firstItem="pdJ-ST-Bfr" firstAttribute="top" secondItem="a3k-cm-Uae" secondAttribute="bottom" constant="1" id="rIN-cO-TKo"/>
+                    <constraint firstItem="a3k-cm-Uae" firstAttribute="leading" secondItem="pdJ-ST-Bfr" secondAttribute="leading" id="wel-iY-rF4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="moreOptionsButton" destination="am2-EZ-ihW" id="TFJ-9y-cqG"/>
+                <outlet property="playlistDescription" destination="pdJ-ST-Bfr" id="G5y-wt-hWV"/>
+                <outlet property="playlistImage" destination="OPP-vk-64h" id="fIW-02-r3d"/>
+                <outlet property="playlistTitle" destination="a3k-cm-Uae" id="Gyl-3b-OA9"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="64.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="NowPlaying-More" width="19" height="5"/>
+    </resources>
+</document>
