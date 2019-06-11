@@ -31,6 +31,7 @@ Optionally I can also use [LastFM API](https://www.last.fm/api) to retrieve and 
 Furthermore, the framework [Marqueelabel](https://github.com/cbpowell/MarqueeLabel) and [LNPopupController](https://github.com/LeoNatan/LNPopupController/blob/master/README.md) is  used in this app. To install it go to the specific linked pages.
 
 ## Screen design
+![Playlist](https://raw.githubusercontent.com/mubaarakhassan/SmashMusic/master/images/Playlists.png)
 
 
 
